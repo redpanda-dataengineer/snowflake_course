@@ -236,9 +236,29 @@ show file formats;
 ```
 # Data Loading Approaches
 
-## Bulk loading Overview
+## Bulk loading Overview (COPY INTO <table> FROM @stage)
 
 - Internal Stage
 - External Stage
 
 ## Continuous Data Loading
+
+- COPY command (BATCH) (Microbatching)
+    - Migration from traditional data source
+    - Transaction boundary control
+        - begin / start transaction / commit / rollback
+    - independently scale compute resources for different ingestion workloads
+- Snowpipe (Continuous)
+    - Ingestion from modern data sources
+    - Continuosly generated data is available for analysis is seconds
+    - No scheduling (with auto-ingest)
+    - Serverless model with no user-managed virtual warehouse needed
+
+Snowpipe
+- Named object contains a COPY statement used by snowppe
+    - Source stage for data files
+    - Target table
+- Loads data into tables continuously from an ingestion queue
+- Can be paused/resumed, return status
+- Best practice: size files between 10 Mb and 100 Mb (compressed) when staging files for ingest with snowpipe
+
