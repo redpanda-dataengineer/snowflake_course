@@ -1,0 +1,30 @@
+[0m15:30:34.978489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027448190050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027445E55BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002744A2CBC50>]}
+
+
+============================== 15:30:34.985151 | 5e2b67f8-ac51-43db-96a6-28414d989e5b ==============================
+[0m15:30:34.985151 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:30:34.985834 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\valeriyk1402\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:35.002631 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\valeriyk1402\.dbt
+[0m15:30:47.254512 [debug] [MainThread]: Starter project path: C:\Users\valeriyk1402\Documents\Projects\DataART\dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:30:47.340726 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:30:47.341801 [info ] [MainThread]: Setting up your profile.
+[0m15:33:40.754911 [info ] [MainThread]: Profile data_pipeline written to C:\Users\valeriyk1402\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:33:40.757538 [debug] [MainThread]: Command `dbt init` succeeded at 15:33:40.757413 after 185.97 seconds
+[0m15:33:40.757841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002744AF5C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002744A2470B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002744AF008D0>]}
+[0m15:33:40.758153 [debug] [MainThread]: Flushing usage events
+[0m15:33:42.146553 [debug] [MainThread]: An error was encountered while trying to flush usage events
