@@ -236,7 +236,7 @@ show file formats;
 ```
 # Data Loading Approaches
 
-## Bulk loading Overview (COPY INTO <table> FROM @stage)
+## Bulk loading Overview (COPY INTO table FROM @stage)
 
 - Internal Stage
 - External Stage
