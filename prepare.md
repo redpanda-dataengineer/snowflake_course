@@ -786,3 +786,32 @@ use schema mydb.myschema;
 
 show databases;
 ```
+
+# Cloning
+
+- Quickly take a "snapshot" of any table, schema, database (clones can be cloned)
+- When the clone is created:
+    - All micro-partitions in both tables are fully shared
+    - Micro-partition storage is owned be the oldest table, clone references them
+- No additional storage costs until changes are made to the original or the clone
+- Often used to quickly spin up Dev or Test environments
+- Effective "backup" option as well
+
+```sql
+-- clone the database
+create or replace database test_db
+clone prod_db;
+```
+
+```sql
+use role accountadmin;
+
+use warehouse compute_wh;
+
+use schema mydb.myschema;
+
+create or replace database test_mydb
+clone mydb;
+
+drop database test_mydb;
+```
